@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #EFEFEF;
+    font-family: 'Poppins', sans-serif;
+}
+body::before {
+    content: '';
+    background: #535971;
+    width: 100%;
+    height: 436px;
+    position: absolute;
+    z-index: -1;
+}
+.content {
+    margin: 0 auto;
+    width: 750px;
+}
+header {
+    width: 417px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 140px;
+}
+header h1 {
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+header p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+h1,
+legend,
+h3,
+button {
+    font-weight: 400;
+    font-family: 'Staatliches';
+}
+form {
+    background: #FFFFFF;
+    padding: 64px;
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 20px 20px 0 0;
+}
+fieldset {
+    border: none;
+}
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.fieldset-wrapper legend {
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 20px;
+}
+.fieldset-wrapper .name-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+.fieldset-wrapper .name-wrapper div {
+    width: 100%;
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+.input-wrapper label span:hover {
+    color: #75727c;
+}
+.input-wrapper input {
+    height: 56px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #535971;
+}
+.date-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+h3 {
+    font-size: 20px;
+    line-height: 34px;
+    color: #535971;
+}
+.mentorship-date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+}
+.mentorship-time {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+#mentorship-start1,
+#mentorship-start2,
+#mentorship-finish1,
+#mentorship-finish2 {
+    width: 140px;
+}
+footer {
+    margin-bottom: 170px;
+    background: #535971;
+    height: 160px;
+    padding: 52px 71px;
+    border-radius: 0 0 20px 20px;
+}
+footer button {
+    background: #FF5374;
+    color: #FFFFFF;
+    border: none;
+    width: 100%;
+    height: 56px;
+    border-radius: 20px;
+}
+footer button:hover {
+    background: #de4766;
+}
+.input-wrapper input:invalid {
+    border: 1px red solid;
+}
